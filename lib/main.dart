@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: mycolor,
       ),
-      home: const MyHomePage(title: 'Seçim Sonuç Takip Sistemi 2023'),
+      home: const MyHomePage(title: 'Seçim Oy Takip Sistemi'),
     );
   }
 }
@@ -106,6 +106,13 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Color(0xFFB70404),
         title: Text(widget.title),
+        actions: [
+          new IconButton(
+            icon: new Image.asset('lib/images/fors.png'),
+            tooltip: 'Do Nothing',
+            onPressed: () {},
+          ),
+        ],
       ),
       body: Center(
         child: Padding(
